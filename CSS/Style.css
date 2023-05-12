@@ -1,0 +1,145 @@
+.servicesMainDiv{
+    padding: 3% 18%;
+    text-align: left;
+    font-family: serif;
+     --font-family-monospace:"Liberation Mono","Courier New",monospace;
+}
+.servicesDescription{
+    padding-right: 30%;
+}
+.servicesH2 h2{
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 400%;
+    -webkit-font-feature-settings: "pnum" on,"lnum" on;
+    font-feature-settings: "pnum" on,"lnum" on;
+}
+.servicesH3{
+   font-weight: lighter;
+   margin-bottom: 3%;
+   padding: 9% 0%;
+   padding-bottom: 20%;
+}
+
+.servicesH3 h3{
+    font-weight: lighter;
+}
+.serviceImage{
+    width: 95%;
+    height: 90%;
+    object-fit: cover;
+}
+.servicesP p{
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 1.2rem
+}
+.servicesP p:hover{
+    color: rgb(85, 81, 81);
+
+}
+.servicesP p:hover + img{
+    position: relative;
+    animation-name: change;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+}
+.servicesP a{
+    color: black;
+}
+.servicesP img{
+    width: 25px;
+    margin-left: 20px;
+}
+.servicesP img:hover{
+    position: relative;
+    animation-name: change;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1500px) {
+    .servicesMainDiv{
+        padding: 5% 3%;
+    }
+    .servicesDescription{
+        padding-right: 20%;
+    }
+    .servicesH2 h2{
+        font-size: 300%;
+        -webkit-transform: scaleY(1.1);
+        transform: scaleY(1.05);
+    }
+    .serviceImage{
+        height: 100%;
+        width: 88%;
+    }
+    .servicesH3{
+        padding-bottom: 20%;
+    }
+    .servicesH3 h3{
+        font-size: 1.3rem;
+        font-weight: 500;
+        font-style: normal;
+    }
+    .servicesP p{
+        font-size: 1.3rem;
+    }
+  }
+
+
+  @keyframes change {
+    from {left: 15px; opacity: 0;}
+    to {left: 0px; opacity: 1;}
+  }
+
+
+
+
+
+  .servicesDescription-b{
+      padding: 2% 3%;
+  }
+.servicesH2-b{
+    padding: 7% 0%;
+}
+  .servicesH2-b h2{
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 38px;
+}
+  .servicesH3-b{
+    font-weight: lighter;
+    padding: 5% 0%;
+    padding-bottom: 3%;
+ }
+ .servicesH3-b h3{
+     font-size: 1.2rem;
+ }
+ 
+  .servicesP-b p{
+    display: inline-block;
+    font-weight: bold;
+    font-size: large;
+}
+.servicesP-b p:hover{
+    color: rgb(85, 81, 81);
+    
+}
+.servicesP-b img{
+    width: 25px;
+    margin-left: 20px;
+}
+.servicesP-b img:hover{
+    position: relative;
+    animation-name: change-b;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    cursor: pointer;
+}
+@keyframes change-b {
+    from {left: 15px; opacity: 0;}
+    to {left: 0px; opacity: 1;}
+  }
